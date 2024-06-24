@@ -1,8 +1,7 @@
 package com.inheritance.ex;
 
-public class Test {
+public class TestDemo {
 	public static void main(String[] args) {
-		Child c1=new Child(10);
-		//System.out.println(c1.x);
+		GrandChild g1=new GrandChild();
 	}
 }
