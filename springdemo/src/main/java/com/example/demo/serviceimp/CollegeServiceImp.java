@@ -33,12 +33,18 @@ public class CollegeServiceImp implements CollegeService
 	@Override
 	public College updateData(College college) {
 		// TODO Auto-generated method stub
-		return null;
+
+		College c1=collegeRepository.findById(college.getId()).get();
+		c1.setName(college.getName());
+		c1.setCity(college.getCity());
+		c1.setTurnover(college.getTurnover());
+		return collegeRepository.save(c1);
 	}
 
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
+		collegeRepository.deleteById(id);
 
 	}
 

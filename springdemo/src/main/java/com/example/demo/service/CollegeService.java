@@ -9,5 +9,6 @@ public interface CollegeService {
 	List<College> GetData();
 	College updateData(College college);
 	void delete(int id);
+	
 
 }
